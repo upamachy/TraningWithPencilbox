@@ -1,0 +1,16 @@
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.exe
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.deps.json
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.runtimeconfig.json
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.runtimeconfig.dev.json
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.dll
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\ref\Day-7.dll
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\bin\Debug\net5.0\Day-7.pdb
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.dll
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\ref\Day-7.dll
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.pdb
+F:\upama\TraningWithPencilbox\CWPracticeExamples\Day-7\obj\Debug\net5.0\Day-7.genruntimeconfig.cache
