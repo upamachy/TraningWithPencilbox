@@ -1,0 +1,16 @@
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.exe
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.deps.json
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.runtimeconfig.json
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.runtimeconfig.dev.json
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.dll
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\ref\Test.dll
+F:\upama\TraningWithPencilbox\CW\Test\bin\Debug\net5.0\Test.pdb
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.dll
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\ref\Test.dll
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.pdb
+F:\upama\TraningWithPencilbox\CW\Test\obj\Debug\net5.0\Test.genruntimeconfig.cache
