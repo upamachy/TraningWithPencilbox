@@ -11,6 +11,8 @@ namespace Day_7.Database
     class SMEcommerceDbcontext:DbContext
     {
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Item> Products { get; set; }
+        public DbSet<Brand> Brands  { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = @"Server=DELL\SQLEXPRESS; Database = SMEcommerceDB; Integrated Security=True";

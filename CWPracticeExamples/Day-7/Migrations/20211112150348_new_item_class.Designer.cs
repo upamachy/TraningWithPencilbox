@@ -4,35 +4,22 @@ using Day_7.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Day_7.Migrations
 {
     [DbContext(typeof(SMEcommerceDbcontext))]
-    partial class SMEcommerceDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20211112150348_new_item_class")]
+    partial class new_item_class
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("Day_7.Models.EntityModels.Brand", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Brands");
-                });
 
             modelBuilder.Entity("Day_7.Models.EntityModels.Category", b =>
                 {
@@ -60,9 +47,6 @@ namespace Day_7.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("BrandId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
@@ -77,27 +61,16 @@ namespace Day_7.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BrandId");
-
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Items");
                 });
 
             modelBuilder.Entity("Day_7.Models.EntityModels.Item", b =>
                 {
-                    b.HasOne("Day_7.Models.EntityModels.Brand", null)
-                        .WithMany("Items")
-                        .HasForeignKey("BrandId");
-
                     b.HasOne("Day_7.Models.EntityModels.Category", null)
                         .WithMany("Items")
                         .HasForeignKey("CategoryId");
-                });
-
-            modelBuilder.Entity("Day_7.Models.EntityModels.Brand", b =>
-                {
-                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("Day_7.Models.EntityModels.Category", b =>

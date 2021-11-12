@@ -4,14 +4,16 @@ using Day_7.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Day_7.Migrations
 {
     [DbContext(typeof(SMEcommerceDbcontext))]
-    partial class SMEcommerceDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20211112173413_Add_Brand_class")]
+    partial class Add_Brand_class
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
