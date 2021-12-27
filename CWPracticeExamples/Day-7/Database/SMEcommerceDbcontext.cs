@@ -16,7 +16,10 @@ namespace Day_7.Database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = @"Server=DELL\SQLEXPRESS; Database = SMEcommerceDB; Integrated Security=True";
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder
+                //.UseLazyLoadingProxies()
+                
+                .UseSqlServer(connectionString);
         }
     }
 }

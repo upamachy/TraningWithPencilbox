@@ -1,5 +1,7 @@
 ﻿using Day_7.Database;
 using Day_7.Models.EntityModels;
+using Day_7.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,110 +12,232 @@ namespace Day_7
     {
         static void Main(string[] args)
         {
-            //Category category = new Category() { Name ="Furniture"};
-            //Category category2 = new Category() { Name ="Electronics"};
-            //Category category3 = new Category() { Name ="Home_Appliance"};
-            //var categories = new[]
-            //{
-            //    new Category(){Name="Clothing"},
-            //    new Category(){Name="Stationaries"},
-            //    new Category(){Name="Vehicles"}
-            //};
-
 
             SMEcommerceDbcontext db = new SMEcommerceDbcontext();
-            //var category = new Category()
-            //{
-            //    Name = "Gadgets"
-            //};
+
+            #region Category
+
             //var items = new List<Item>()
             //{
             //    new Item()
             //    {
-            //        Name="Smart Watch",
-            //        Price =61361,
+            //        Name="Sharee",
+            //        Price =3136,
             //        Manufacturedate=DateTime.Now
             //    },
-
             //     new Item()
             //    {
-            //        Name="Google glass",
-            //        Price =648746,
+            //        Name="Kurti",
+            //        Price =31362,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //      new Item()
+            //    {
+            //        Name="lehenga",
+            //        Price =313645,
             //        Manufacturedate=DateTime.Now
             //    }
             //};
 
-            //category.Items = items;
-            //db.Categories.Add(category);
-            //db.SaveChanges();
+            //var items2 = new List<Item>()
+            //{
+            //    new Item()
+            //    {
+            //        Name="Churi",
+            //        Price =3136,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //     new Item()
+            //    {
+            //        Name="EarRing",
+            //        Price =31362,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //      new Item()
+            //    {
+            //        Name="Necklace",
+            //        Price =313645,
+            //        Manufacturedate=DateTime.Now
+            //    }
+            //};
 
-            //db.Categories.Add(category);
-            //db.Categories.Add(category2);
-            //db.Add(category3);
-            //db.Categories.AddRange(categories);
+            //var categortList = new List<Category>()
+            //{
+            //    new Category(){Name="Dress",Items=items},
+            //    new Category(){Name="Ornaments",Items=items2}
+            //};
 
-            #region Brand
 
-            var brand = new Brand()
-            { 
-                Name="Hatil"
-            };
-            var items = new List<Item>()
-            {
-                new Item()
-                {
-                    Name="Chair",
-                    Price =3136,
-                    Manufacturedate=DateTime.Now
-                },
-                 new Item()
-                {
-                    Name="Table",
-                    Price =31362,
-                    Manufacturedate=DateTime.Now
-                },
-                  new Item()
-                {
-                    Name="Bed",
-                    Price =313645,
-                    Manufacturedate=DateTime.Now
-                }
-            };
+            //var BrandList = new List<Brand>()
+            //{
+            //  new Brand(){Name="Shoilpik",Items=items},
+            //  new Brand(){Name ="Arong",Items=items2}
 
-            brand.Items = items;
-            db.Brands.Add(brand);
-            int sucessCount = db.SaveChanges();
+            //};
 
-            if(sucessCount>0)
-            {
-               Console.WriteLine($"Build Sucessfully and the SucessCount is: {sucessCount}");
-            }
 
-            //Read Data
+            ////db.Categories.AddRange(categortList);
+            ////db.Brands.AddRange(BrandList);
 
-            var brands = db.Brands;
+            //int sucessCount = db.SaveChanges();
 
-            int i = 0;
-            foreach (var item in brands)
-            {
-              Console.WriteLine($"[{++i}] Id:{item.Id} name: {item.Name}");
-            }
+            //if (sucessCount > 0)
+            //{
+            //    Console.WriteLine($"Build Sucessfully and the SucessCount is: {sucessCount}");
+            //}
+
 
             #endregion
 
-            //Console.WriteLine("Please provide input......");
-            //var id=int.Parse(Console.ReadLine());
-            //var category = db.Categories.FirstOrDefault(x => x.Id == id);
-            //Console.WriteLine($"The Id: {category.Id} and the Name:{category.Name}");
+            #region Brand
 
-            //Console.WriteLine("Change the Name:");
-            //var changedName = Console.ReadLine();
-            //category.Name = changedName;
-            //int successCount = db.SaveChanges();
-            //if(successCount>0)
+
+            //var items = new List<Item>()
             //{
-            //    Console.WriteLine($"Sucessfully Updated! and the Sucess Count is : {successCount}");
+            //    new Item()
+            //    {
+            //        Name="Chair",
+            //        Price =3136,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //     new Item()
+            //    {
+            //        Name="Table",
+            //        Price =31362,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //      new Item()
+            //    {
+            //        Name="Bed",
+            //        Price =313645,
+            //        Manufacturedate=DateTime.Now
+            //    }
+            //};
+
+            //var items2 = new List<Item>()
+            //{
+            //    new Item()
+            //    {
+            //        Name="Mobile",
+            //        Price =3136,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //     new Item()
+            //    {
+            //        Name="Laptop",
+            //        Price =31362,
+            //        Manufacturedate=DateTime.Now
+            //    },
+            //      new Item()
+            //    {
+            //        Name="Keybroad",
+            //        Price =313645,
+            //        Manufacturedate=DateTime.Now
+            //    }
+            //};
+
+            //var BrandList = new List<Brand>()
+            //{
+            //  new Brand(){Name="Otobi",Items=items},
+            //  new Brand(){Name ="Lenovo",Items=items2}
+
+            //};
+
+
+
+            //db.Brands.AddRange(BrandList);
+            //int sucessCount = db.SaveChanges();
+
+            //if (sucessCount > 0)
+            //{
+            //    Console.WriteLine($"Build Sucessfully and the SucessCount is: {sucessCount}");
             //}
+
+            //Read Data
+
+            //var brands = db.Brands.ToList();
+
+
+            //foreach (var item in brands)
+            //{
+            //    Console.WriteLine($" BrandId:{item.Id} BrandName: {item.Name}");
+            //    db.Entry(item).Collection(c => c.Items).Load();
+            //    Console.WriteLine();
+            //    Console.WriteLine($"........items of Brand {item.Name}........");
+            //    foreach (var it in item.Items)
+            //    {
+
+            //        Console.WriteLine($"Item Name:{it.Name}");
+            //    }
+            //}
+
+            //var items1 = db.Products.ToList();
+
+            //foreach (var it in items1)
+            //{
+            //    db.Entry(it).Reference(c => c.Brand).Load();
+            //    Console.WriteLine($"Items Brand  Name:{it.Brand.Name}");
+            //}
+
+
+            #endregion
+
+            #region OperationOnSpecificData
+
+            //var brand = db.Brands.FirstOrDefault(c => c.Id == 4);
+            //var items = db.Products.Where(c => c.BrandId == 4).ToList();
+            //items.Add(new Item() { Name="Smart Watch"});
+            ////var item = db.Products.FirstOrDefault(c => c.Id == 4);
+            ////item.Name = item.Name + "Changed";
+
+            ////brand.Name = "Samsung";
+            //brand.Items = items;
+            //int sucessCount = db.SaveChanges();
+            //if(sucessCount>0)
+            //{
+            //    Console.WriteLine("Sucessful");
+            //}
+
+
+
+            #endregion
+
+            #region UpdateCategoryWithRepository
+
+            CategoryRepositories catRepo = new CategoryRepositories();
+            ProductRepositories proRepo = new ProductRepositories();
+            var category = catRepo.GetId(1);
+
+
+            //var items=catRepo.GetAll().ToList();
+            //foreach (var item in items)
+            //{
+            //    foreach (var it in item.Items)
+            //    {
+            //        Console.WriteLine(it.Name);
+            //    }
+            //}
+
+
+            var items = db.Products.Where(c => c.CategoryId == 1 && c.BrandId==1).ToList();
+            items.Add(new Item() { Name = "New item 2"});
+            var item = db.Products.FirstOrDefault(c => c.Id == 3);
+            item.Name = item.Name + "Changed 2";
+
+            //var item = proRepo.GetId(4);
+            //item.Name = item.Name + "_Changed";
+            //proRepo.Add(item);
+            //category.Name = "new Sharees";
+
+            category.Items = items;
+            bool issucess = catRepo.Update(category);
+            //int successCount = db.SaveChanges();
+            if (issucess)
+            {
+                Console.WriteLine("Sucessful");
+            }
+
+            #endregion
         }
     }
 }

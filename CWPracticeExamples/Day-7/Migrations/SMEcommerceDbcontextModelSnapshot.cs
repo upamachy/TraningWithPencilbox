@@ -60,10 +60,10 @@ namespace Day_7.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("BrandId")
+                    b.Property<int>("BrandId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Manufacturedate")
@@ -86,13 +86,21 @@ namespace Day_7.Migrations
 
             modelBuilder.Entity("Day_7.Models.EntityModels.Item", b =>
                 {
-                    b.HasOne("Day_7.Models.EntityModels.Brand", null)
+                    b.HasOne("Day_7.Models.EntityModels.Brand", "Brand")
                         .WithMany("Items")
-                        .HasForeignKey("BrandId");
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Day_7.Models.EntityModels.Category", null)
+                    b.HasOne("Day_7.Models.EntityModels.Category", "Category")
                         .WithMany("Items")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Brand");
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Day_7.Models.EntityModels.Brand", b =>

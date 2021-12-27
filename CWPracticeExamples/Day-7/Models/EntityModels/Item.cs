@@ -14,6 +14,13 @@ namespace Day_7.Models.EntityModels
         public string Name { get; set; }
         public DateTime Manufacturedate { get; set; }
         public double Price { get; set; }
-        //public Category Category { get; set; }
+
+        [ForeignKey("Category")]
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+
+        [ForeignKey("Brand")]
+        public int BrandId { get; set; }
+        public  Brand Brand { get; set; }
     }
 }

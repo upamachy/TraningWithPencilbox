@@ -1,0 +1,13 @@
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\bin\Debug\netstandard2.1\SMEcommerce.Databases.deps.json
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\bin\Debug\netstandard2.1\SMEcommerce.Databases.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\bin\Debug\netstandard2.1\SMEcommerce.Databases.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\bin\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\bin\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Databases\obj\Debug\netstandard2.1\SMEcommerce.Databases.csproj.CopyComplete

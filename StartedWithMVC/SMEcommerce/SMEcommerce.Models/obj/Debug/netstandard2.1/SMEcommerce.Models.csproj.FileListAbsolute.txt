@@ -1,0 +1,10 @@
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\bin\Debug\netstandard2.1\SMEcommerce.Models.deps.json
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\bin\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\bin\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Models\obj\Debug\netstandard2.1\SMEcommerce.Models.csproj.AssemblyReference.cache

@@ -10,6 +10,7 @@ namespace Day_7.Models.EntityModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Item> Items { get; set; }
+        public  ICollection<Item> Items { get; set; }
+        
     }
 }
