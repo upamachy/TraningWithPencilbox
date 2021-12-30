@@ -11,8 +11,14 @@ namespace SMEcommerceApp.Controllers
 {
     public class CategoryController : Controller
     {
+        CategoryRepositories _categoryRepository;
+        public CategoryController()
+        {
+            _categoryRepository = new CategoryRepositories();
+        }
         public string Index()
         {
+            
             return "This is a default Controller";
         }
 
@@ -47,7 +53,7 @@ namespace SMEcommerceApp.Controllers
         [HttpPost]
         public IActionResult Create(CategoryCreate model)
         {
-            CategoryRepositories categoryRepo = new CategoryRepositories();
+           
             if (model.Name!=null)
             {
                 
@@ -58,13 +64,26 @@ namespace SMEcommerceApp.Controllers
                     Code = model.Code
                 };
 
-                var isAdded = categoryRepo.Add(category);
+                var isAdded = _categoryRepository.Add(category);
                 if(isAdded)
                 {
                     return View("Success");
                 }
             }
           return View();
+        }
+
+        public IActionResult List()
+        {
+            var categoryList = _categoryRepository.GetAll();
+            //ViewBag.CategoryList = categoryList;
+            //viewBag mainly used to get the data from controller in view.
+            //viewBag mainly a dynamic + expand obj type.Where it can get the property using dot with it and doesn't need to declare the property separately.
+            ViewData["CategoryList"] = categoryList;
+            //viewBag ultimately use viewData as underline datastore.
+            //viewBag-Dynamic type obj 
+            //viewdata-Dynamic type dictionary
+            return View();
         }
 
         #endregion
