@@ -1,8 +1,9 @@
 ﻿@using SMEcommerce.Models.EntityModels
+@Model List<Category>
 @{ 
     //List<Category> categoryList = ViewBag.CategoryList;
     //or
-    List<Category> categoryList = ViewData["CategoryList"] as List<Category>;
+    //List<Category> categoryList = ViewData["CategoryList"] as List<Category>;
     int serialNo = 0;
 }
 
@@ -22,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var category in categoryList)
+                @foreach (var category in Model)
                 {
                     <tr>
                         <td>@(++serialNo)</td>

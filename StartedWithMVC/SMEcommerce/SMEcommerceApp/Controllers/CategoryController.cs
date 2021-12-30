@@ -76,14 +76,14 @@ namespace SMEcommerceApp.Controllers
         public IActionResult List()
         {
             var categoryList = _categoryRepository.GetAll();
-            //ViewBag.CategoryList = categoryList;
+              //ViewBag.CategoryList = categoryList;
             //viewBag mainly used to get the data from controller in view.
             //viewBag mainly a dynamic + expand obj type.Where it can get the property using dot with it and doesn't need to declare the property separately.
-            ViewData["CategoryList"] = categoryList;
+              //ViewData["CategoryList"] = categoryList;
             //viewBag ultimately use viewData as underline datastore.
             //viewBag-Dynamic type obj 
             //viewdata-Dynamic type dictionary
-            return View();
+            return View(categoryList);
         }
 
         #endregion
