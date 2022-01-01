@@ -1,5 +1,7 @@
-﻿@using SMEcommerce.Models.EntityModels
-@Model List<Category>
+﻿@*@using SMEcommerce.Models.EntityModels*@
+
+@model SMEcommerceApp.Models.CategoryModels.CategoryListVM
+
 @{ 
     //List<Category> categoryList = ViewBag.CategoryList;
     //or
@@ -9,7 +11,22 @@
 
 <div class="card">
     <div class="card-header">
+        <h3 class="card-title">
+            @Model.Title
+
+        </h3>
+    </div>
+    <div class="card-body">
+        @Model.Description
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
         <h3 class="card-title">Category List</h3>
+        <div class="card-tools">
+            <a class="btn btn-primary" asp-action="Create">Create</a>
+        </div>
     </div>
     <!-- /.card-header -->
     <div class="card-body">
@@ -23,7 +40,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var category in Model)
+                @foreach (var category in Model.CategoryList)
                 {
                     <tr>
                         <td>@(++serialNo)</td>
@@ -31,7 +48,7 @@
                         <td>
                             @category.Code
                         </td>
-                        <td><span class="badge bg-danger">55%</span></td>
+                        <td><a asp-action="Edit" class="badge bg-warning">Edit</a></td>
                     </tr>
 
                 }
