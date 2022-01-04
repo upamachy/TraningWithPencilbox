@@ -67,20 +67,81 @@ namespace SMEcommerceApp.Controllers
                 var isAdded = _categoryRepository.Add(category);
                 if(isAdded)
                 {
-                    var categoryList = _categoryRepository.GetAll();
-                    var categoryListVm = new CategoryListVM()
-                    {
-                        Title = "Category Overview",
-                        Description = "You can manage category from this page .You can create,Update and delete categories...",
-                        CategoryList = categoryList.ToList()
-
-                    };
-
-                    return View("List",categoryListVm);
+                    return RedirectToAction("List");
                 }
             }
           return View();
         }
+
+        public IActionResult Edit(int? id)
+        {
+            if(id==null)
+            {
+                return RedirectToAction("List");
+            }
+
+            var category = _categoryRepository.GetId((int)id);
+
+            if(category==null)
+            {
+                return RedirectToAction("List");
+            }
+
+            var categoryEditVm = new CategoryEditVM()
+            {
+                Id=category.Id,
+                Name = category.Name,
+                Code = category.Code,
+                Description = category.Description
+
+            };
+
+            return View(categoryEditVm);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(CategoryEditVM model)
+        {
+            if(ModelState.IsValid)
+            {
+                var category = new Category()
+                {
+                    Id = model.Id,
+                    Name = model.Name,
+                    Code = model.Code,
+                    Description = model.Description
+                };
+
+                bool isUpdated = _categoryRepository.Update(category);
+                if(isUpdated)
+                {
+                    return RedirectToAction("List");
+                }
+            }
+            return View();
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            if(id==null)
+            {
+                return RedirectToAction("List");
+            }
+
+            var category = _categoryRepository.GetId((int)id);
+            if(category==null)
+            {
+                return RedirectToAction("List");
+            }
+
+            bool isremoved = _categoryRepository.Remove(category);
+            if(isremoved)
+            {
+                return RedirectToAction("List");
+            }
+            return RedirectToAction("List");
+        }
+        
 
         public IActionResult List()
         {

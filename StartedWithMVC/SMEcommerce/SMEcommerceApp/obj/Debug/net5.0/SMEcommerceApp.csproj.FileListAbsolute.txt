@@ -155,3 +155,4 @@ F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debu
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\_ViewStart.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\List.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
