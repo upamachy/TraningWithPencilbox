@@ -156,3 +156,9 @@ F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debu
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\_ViewStart.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\List.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\List.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\_ViewStart.cshtml.g.cs

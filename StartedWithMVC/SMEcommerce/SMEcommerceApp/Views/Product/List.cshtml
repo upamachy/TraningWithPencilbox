@@ -1,0 +1,76 @@
+﻿@model SMEcommerceApp.Models.ProductModels.ProductListVm
+
+@{
+    int sn = 0;
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">
+            @Model.Title
+        </h3>
+    </div>
+
+    <div class="card-body">
+        @Model.Description
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Product List</h3>
+        <div class="card-tools">
+            <a asp-action="Create" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 10px">Sl</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Manufacturer Date</th>
+                    <th>Category</th>
+                    <th style="width: 40px">Details</th>
+                    <th style="width: 40px">Edit</th>
+                    <th style="width: 40px">Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ProductList)
+                {
+                    <tr>
+                        <td>@(++sn)</td>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.ManufactureDate</td>
+                        @if (item.Category != null)
+                        {
+                            <td>@item.Category.Name</td>
+                        }
+
+                        <td><a asp-action="Details" asp-route-id="@item.Id" class="badge bg-info text-dark">Details</a></td>
+                        <td><a asp-action="Edit" asp-route-id="@item.Id" class="badge bg-warning">Edit</a></td>
+                        <td><a asp-action="Delete" asp-route-id="@item.Id" class="badge bg-danger">Delete</a></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer clearfix">
+        <ul class="pagination pagination-sm m-0 float-right">
+            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+

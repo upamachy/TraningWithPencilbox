@@ -1,40 +1,60 @@
-﻿using SMEcommerce.Databases.DbContexts;
+﻿using Microsoft.EntityFrameworkCore;
+using SMEcommerce.Databases.DbContexts;
 using SMEcommerce.Models.EntityModels;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SMEcommerce.Repositories
+namespace SMECommerce.Repositories
 {
-    public class ProductRepositories
+    public class ProductRepository
     {
         SMEcommerceDbcontext db;
-        public  ProductRepositories()
+        public ProductRepository()
         {
             db = new SMEcommerceDbcontext();
-        }
-
-        public Item GetId(int id)
-        {
-            return db.Products.FirstOrDefault(c => c.Id==id);
         }
 
         public bool Add(Item item)
         {
             db.Products.Add(item);
-            int successCount = db.SaveChanges();
-            return successCount > 0;
+            return Save();
+
         }
 
         public bool Update(Item item)
         {
             db.Products.Update(item);
-            return db.SaveChanges() > 0;
+            return Save();
         }
 
         public bool Remove(Item item)
         {
             db.Products.Remove(item);
+            return Save();
+        }
+
+        public Item GetById(int id)
+        {
+            var item = db.Products.FirstOrDefault(c => c.Id == id);
+            return item;
+        }
+
+        public ICollection<Item> GetAll()
+        {
+            var items = db.Products.Include(c => c.Category).ToList();
+            return items;
+        }
+
+
+
+
+        public bool Save()
+        {
             return db.SaveChanges() > 0;
         }
+
+
+
+
     }
 }

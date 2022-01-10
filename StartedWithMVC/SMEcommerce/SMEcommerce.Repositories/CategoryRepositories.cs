@@ -43,5 +43,11 @@ namespace SMEcommerce.Repositories
             db.Categories.Remove(category);
             return db.SaveChanges() > 0;
         }
+
+        public Category CategoryName(int id)
+        {
+            return db.Categories.FirstOrDefault(c => c.Id == id);
+
+        }
     }
 }

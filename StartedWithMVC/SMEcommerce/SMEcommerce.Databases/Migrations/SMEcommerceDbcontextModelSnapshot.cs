@@ -19,24 +19,6 @@ namespace Day_7.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SMEcommerce.Models.EntityModels.Brand", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Brands");
-                });
-
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -66,13 +48,13 @@ namespace Day_7.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BrandId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Manufacturedate")
+                    b.Property<DateTime>("ManufactureDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -81,12 +63,7 @@ namespace Day_7.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<string>("description")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -95,26 +72,11 @@ namespace Day_7.Migrations
 
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Item", b =>
                 {
-                    b.HasOne("SMEcommerce.Models.EntityModels.Brand", "Brand")
-                        .WithMany("Items")
-                        .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("SMEcommerce.Models.EntityModels.Category", "Category")
                         .WithMany("Items")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Brand");
+                        .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("SMEcommerce.Models.EntityModels.Brand", b =>
-                {
-                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Category", b =>
