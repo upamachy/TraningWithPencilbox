@@ -1,17 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SMEcommerce.Databases.DbContexts;
 using SMEcommerce.Models.EntityModels;
+using SMEcommerce.Repositories.Abstractions;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace SMECommerce.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository:IProductRepository
     {
         SMEcommerceDbcontext db;
-        public ProductRepository()
+        public ProductRepository(SMEcommerceDbcontext db)
         {
-            db = new SMEcommerceDbcontext();
+            this.db = db;
         }
 
         public bool Add(Item item)

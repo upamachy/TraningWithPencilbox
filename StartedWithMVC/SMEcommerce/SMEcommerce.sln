@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMEcommerce.Models", "SMEco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMEcommerce.Databases", "SMEcommerce.Databases\SMEcommerce.Databases.csproj", "{E520F655-F7A2-498B-83C6-520306812D70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMEcommerce.Repositories", "SMEcommerce.Repositories\SMEcommerce.Repositories.csproj", "{5EF19F3B-AC36-49EE-A48C-14B36B71E5A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMEcommerce.Repositories", "SMEcommerce.Repositories\SMEcommerce.Repositories.csproj", "{5EF19F3B-AC36-49EE-A48C-14B36B71E5A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMECommerce.Services", "SMECommerce.Services\SMECommerce.Services.csproj", "{D16508D1-75B9-43A7-87EA-2BBF8AF4ECF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5EF19F3B-AC36-49EE-A48C-14B36B71E5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF19F3B-AC36-49EE-A48C-14B36B71E5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF19F3B-AC36-49EE-A48C-14B36B71E5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16508D1-75B9-43A7-87EA-2BBF8AF4ECF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16508D1-75B9-43A7-87EA-2BBF8AF4ECF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16508D1-75B9-43A7-87EA-2BBF8AF4ECF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16508D1-75B9-43A7-87EA-2BBF8AF4ECF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using SMEcommerce.Models.EntityModels;
 using SMEcommerce.Repositories;
 using SMECommerce.Repositories;
+using SMECommerce.Services.Interfaces;
 using SMEcommerceApp.Models.ProductModels;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,18 @@ namespace SMEcommerceApp.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ProductRepository _productRepository;
-        private readonly CategoryRepositories _categoryRepository;
-        private readonly IWebHostEnvironment _webHostEnvironment;
-        public ProductController(IWebHostEnvironment webHostEnvironment)
+        //private readonly ProductRepository _productRepository;
+        //private readonly CategoryRepositories _categoryService;
+        //private readonly IWebHostEnvironment _webHostEnvironment;
+        IProductService _productService;
+        ICategoryService _categoryService;
+        public ProductController(IProductService productService,ICategoryService categoryService)
         {
-            _productRepository = new ProductRepository();
-            _categoryRepository = new CategoryRepositories();
-            _webHostEnvironment = webHostEnvironment;
+            _productService = productService;
+            _categoryService = categoryService;
+            //_productRepository = new ProductRepository();
+            //_categoryRepository = new CategoryRepositories();
+            //_webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -50,7 +55,7 @@ namespace SMEcommerceApp.Controllers
             #endregion
 
             #region Approach-2 - Select Drop-Down
-            var categories = _categoryRepository.GetAll().Select(c => new SelectListItem
+            var categories = _categoryService.GetAll().Select(c => new SelectListItem
             {
                 Value = c.Id.ToString(),
                 Text = c.Name
@@ -81,7 +86,7 @@ namespace SMEcommerceApp.Controllers
                     
                 };
 
-                var isAdded = _productRepository.Add(item);
+                var isAdded = _productService.Add(item);
                 if (isAdded)
                 {
                     return RedirectToAction(nameof(List));
@@ -93,7 +98,7 @@ namespace SMEcommerceApp.Controllers
 
         public IActionResult List()
         {
-            var productList = _productRepository.GetAll(); //Received data from Database for passing to User
+            var productList = _productService.GetAll(); //Received data from Database for passing to User
 
             var productListVm = new ProductListVm()
             {
@@ -113,9 +118,9 @@ namespace SMEcommerceApp.Controllers
             {
                 return RedirectToAction("Edit");
             }
-            var product = _productRepository.GetById((int)id);
+            var product = _productService.GetById((int)id);
 
-            var categories = _categoryRepository.GetAll();
+            var categories = _categoryService.GetAll();
 
             var cList = new List<SelectListItem>();
             foreach (var item in categories)
@@ -155,7 +160,7 @@ namespace SMEcommerceApp.Controllers
                     CategoryId = model.CategoryId
 
                 };
-                bool isUpdated = _productRepository.Update(item);
+                bool isUpdated = _productService.Update(item);
                 if (isUpdated)
                 {
                     return RedirectToAction("List");
@@ -173,13 +178,13 @@ namespace SMEcommerceApp.Controllers
             {
                 return RedirectToAction("List");
             }
-            var product = _productRepository.GetById((int)id);
+            var product = _productService.GetById((int)id);
             if (product == null)
             {
                 return RedirectToAction("List");
             }
 
-            bool isRemoved = _productRepository.Remove(product);
+            bool isRemoved = _productService.Remove(product);
 
             if (isRemoved)
             {
@@ -197,10 +202,10 @@ namespace SMEcommerceApp.Controllers
                 return RedirectToAction("List");
             }
 
-            var product = _productRepository.GetById((int)id);
+            var product = _productService.GetById((int)id);
 
 
-            var catName = _categoryRepository.CategoryName((int)product.CategoryId);
+            var catName = _categoryService.CategoryName((int)product.CategoryId);
 
             var productDetailsVm = new ProductDetailsVm()
 

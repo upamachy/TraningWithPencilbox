@@ -1,18 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SMEcommerce.Databases.DbContexts;
 using SMEcommerce.Models.EntityModels;
+using SMEcommerce.Repositories.Abstractions;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace SMEcommerce.Repositories
 {
-    public class CategoryRepositories
+    public class CategoryRepositories:ICategoryRepository
     {
 
         SMEcommerceDbcontext db;
-        public CategoryRepositories()
+        public CategoryRepositories(SMEcommerceDbcontext db)
         {
-            db = new SMEcommerceDbcontext();
+            this.db = db;
         }
 
         public Category GetId(int id)

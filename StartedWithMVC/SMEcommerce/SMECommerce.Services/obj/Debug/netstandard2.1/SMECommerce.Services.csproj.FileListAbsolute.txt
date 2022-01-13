@@ -1,0 +1,17 @@
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMECommerce.Services.deps.json
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMECommerce.Services.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMECommerce.Services.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Databases.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Repositories.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Repositories.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\bin\Debug\netstandard2.1\SMEcommerce.Databases.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.csproj.CopyComplete
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services\obj\Debug\netstandard2.1\SMECommerce.Services.pdb

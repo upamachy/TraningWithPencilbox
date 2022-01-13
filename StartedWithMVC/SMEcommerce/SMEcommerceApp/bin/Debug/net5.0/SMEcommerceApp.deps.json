@@ -36,6 +36,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.Design": "5.0.11",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "SMECommerce.Services": "1.0.0",
           "SMEcommerce.Databases": "1.0.0",
           "SMEcommerce.Repositories": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -1842,6 +1843,18 @@
         },
         "compile": {
           "SMEcommerce.Repositories.dll": {}
+        }
+      },
+      "SMECommerce.Services/1.0.0": {
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0",
+          "SMEcommerce.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "SMECommerce.Services.dll": {}
+        },
+        "compile": {
+          "SMECommerce.Services.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4410,6 +4423,11 @@
       "sha512": ""
     },
     "SMEcommerce.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SMECommerce.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

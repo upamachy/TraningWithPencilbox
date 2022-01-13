@@ -162,3 +162,5 @@ F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debu
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\List.cshtml.g.cs
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\obj\Debug\net5.0\Razor\Views\Product\_ViewStart.cshtml.g.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.Services.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.Services.pdb

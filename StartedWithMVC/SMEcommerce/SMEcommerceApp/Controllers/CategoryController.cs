@@ -1,20 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SMEcommerce.Models.EntityModels;
-using SMEcommerce.Repositories;
+using SMECommerce.Services;
+using SMECommerce.Services.Interfaces;
 using SMEcommerceApp.Models.CategoryModels;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SMEcommerceApp.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoryRepositories _categoryRepository;
-        public CategoryController()
+        ICategoryService _categoryService;
+        public CategoryController(ICategoryService categoryService)
         {
-            _categoryRepository = new CategoryRepositories();
+            _categoryService = categoryService;
         }
         public string Index()
         {
@@ -64,7 +63,7 @@ namespace SMEcommerceApp.Controllers
                     Code = model.Code
                 };
 
-                var isAdded = _categoryRepository.Add(category);
+                var isAdded = _categoryService.Add(category);
                 if(isAdded)
                 {
                     return RedirectToAction("List");
@@ -80,7 +79,7 @@ namespace SMEcommerceApp.Controllers
                 return RedirectToAction("List");
             }
 
-            var category = _categoryRepository.GetId((int)id);
+            var category = _categoryService.GetId((int)id);
 
             if(category==null)
             {
@@ -112,7 +111,7 @@ namespace SMEcommerceApp.Controllers
                     Description = model.Description
                 };
 
-                bool isUpdated = _categoryRepository.Update(category);
+                bool isUpdated = _categoryService.Update(category);
                 if(isUpdated)
                 {
                     return RedirectToAction("List");
@@ -128,13 +127,13 @@ namespace SMEcommerceApp.Controllers
                 return RedirectToAction("List");
             }
 
-            var category = _categoryRepository.GetId((int)id);
+            var category = _categoryService.GetId((int)id);
             if(category==null)
             {
                 return RedirectToAction("List");
             }
 
-            bool isremoved = _categoryRepository.Remove(category);
+            bool isremoved = _categoryService.Remove(category);
             if(isremoved)
             {
                 return RedirectToAction("List");
@@ -145,7 +144,7 @@ namespace SMEcommerceApp.Controllers
 
         public IActionResult List()
         {
-            var categoryList = _categoryRepository.GetAll();
+            var categoryList = _categoryService.GetAll();
             //ViewBag.CategoryList = categoryList;
             //viewBag mainly used to get the data from controller in view.
             //viewBag mainly a dynamic + expand obj type.Where it can get the property using dot with it and doesn't need to declare the property separately.

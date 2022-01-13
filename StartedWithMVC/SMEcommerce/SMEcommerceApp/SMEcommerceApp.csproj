@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SMEcommerce.Databases\SMEcommerce.Databases.csproj" />
     <ProjectReference Include="..\SMEcommerce.Repositories\SMEcommerce.Repositories.csproj" />
+    <ProjectReference Include="..\SMECommerce.Services\SMECommerce.Services.csproj" />
   </ItemGroup>
 
 </Project>
