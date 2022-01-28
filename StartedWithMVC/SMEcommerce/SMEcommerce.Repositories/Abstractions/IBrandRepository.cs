@@ -5,9 +5,8 @@ using System.Text;
 
 namespace SMEcommerce.Repositories.Abstractions
 {
-    public interface ICategoryRepository:IRepositories<Category>
+    public interface IBrandRepository:IRepositories<Brand>
     {
-        ICollection<Category>GetTopCategory();
-        Category CategoryName(int id);
+         
     }
 }

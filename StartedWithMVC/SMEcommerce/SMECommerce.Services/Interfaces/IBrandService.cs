@@ -5,9 +5,7 @@ using System.Text;
 
 namespace SMECommerce.Services.Interfaces
 {
-    public interface ICategoryService:IService<Category>
+    public interface IBrandService:IService<Brand>
     {
-       
-        Category CategoryName(int id);
     }
 }

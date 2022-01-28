@@ -7,10 +7,10 @@ using System.Text;
 
 namespace SMECommerce.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : Service<Item>,IProductService
     {
         IProductRepository _productRepository;
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository):base(productRepository)
         {
             _productRepository = productRepository;
         }

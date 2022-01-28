@@ -7,42 +7,23 @@ using System.Linq;
 
 namespace SMEcommerce.Repositories
 {
-    public class CategoryRepositories:ICategoryRepository
+    public class CategoryRepositories:Repository<Category>, ICategoryRepository
     {
 
         SMEcommerceDbcontext db;
-        public CategoryRepositories(SMEcommerceDbcontext db)
+        public CategoryRepositories(SMEcommerceDbcontext db) : base(db)
         {
             this.db = db;
         }
 
-        public Category GetId(int id)
+        public override Category GetById(int id)
         {
             return db.Categories.FirstOrDefault(c => c.Id == id);
         }
 
-        public ICollection<Category> GetAll()
+        public override ICollection<Category> GetAll()
         {
             return db.Categories.Include(c => c.Items).ToList();
-        }
-
-        public bool Add(Category category)
-        {
-            db.Categories.Add(category);
-            int successCount = db.SaveChanges();
-            return successCount > 0;
-        }
-
-        public bool Update(Category category)
-        {
-            db.Categories.Update(category);
-            return db.SaveChanges() > 0;
-        }
-
-        public bool Remove(Category category)
-        {
-            db.Categories.Remove(category);
-            return db.SaveChanges() > 0;
         }
 
         public Category CategoryName(int id)
@@ -50,5 +31,12 @@ namespace SMEcommerce.Repositories
             return db.Categories.FirstOrDefault(c => c.Id == id);
 
         }
+
+        public ICollection<Category> GetTopCategory()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        
     }
 }

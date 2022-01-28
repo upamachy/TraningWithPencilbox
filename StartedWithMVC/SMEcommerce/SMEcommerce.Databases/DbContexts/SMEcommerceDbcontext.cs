@@ -11,6 +11,7 @@ namespace SMEcommerce.Databases.DbContexts
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Item> Products { get; set; }
+        public DbSet<Brand> Brands { get; set; }
 
         //public DbSet<Brand> Brands { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
