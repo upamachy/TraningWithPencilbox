@@ -2066,6 +2066,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
+          "SMECommerce.Repositories.Abstractions": "1.0.0",
           "SMEcommerce.Databases": "1.0.0"
         },
         "compile": {
@@ -2073,6 +2074,32 @@
         },
         "runtime": {
           "bin/placeholder/SMEcommerce.Repositories.dll": {}
+        }
+      },
+      "SMECommerce.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        }
+      },
+      "SMECommerce.Services.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.Services.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.Services.Abstractions.dll": {}
         }
       }
     }
@@ -7201,10 +7228,21 @@
       "type": "project",
       "path": "../SMEcommerce.Repositories/SMEcommerce.Repositories.csproj",
       "msbuildProject": "../SMEcommerce.Repositories/SMEcommerce.Repositories.csproj"
+    },
+    "SMECommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj",
+      "msbuildProject": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj"
+    },
+    "SMECommerce.Services.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.Services.Abstractions/SMECommerce.Services.Abstractions.csproj",
+      "msbuildProject": "../SMECommerce.Services.Abstractions/SMECommerce.Services.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "SMECommerce.Services.Abstractions >= 1.0.0",
       "SMEcommerce.Models >= 1.0.0",
       "SMEcommerce.Repositories >= 1.0.0"
     ]
@@ -7241,6 +7279,9 @@
             },
             "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj": {
               "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj"
+            },
+            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj": {
+              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj"
             }
           }
         }

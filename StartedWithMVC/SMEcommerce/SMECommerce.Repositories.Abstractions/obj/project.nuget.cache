@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "POZMHVpOKqvYCvF0I2LXD+vhozGItZXLeaXs8bcP8UbE6Mg1imAk+82Su+ib4Rs3GHcPQfczqYfKPWrAVYAZAw==",
+  "success": true,
+  "projectFilePath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

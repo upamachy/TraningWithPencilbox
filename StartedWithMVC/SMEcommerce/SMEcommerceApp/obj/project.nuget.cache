@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ySmoz3wGXry/PjmDHOPvobBIgkobjIj3R00Ceum4zU/XOba2Ih6VG174rk1kPJ89rzHxYvm5RpN6yQqUxl7R3w==",
+  "dgSpecHash": "zbNH4wX+B3vs2NcT8kNLN9Z1l5gk9vYYHNOlk2GiFJN++xpUYbSWHc4Q+WZXOp7N6iLig57QBozZHKACvmqMeg==",
   "success": true,
   "projectFilePath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerceApp\\SMEcommerceApp.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,7 @@
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
-    "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

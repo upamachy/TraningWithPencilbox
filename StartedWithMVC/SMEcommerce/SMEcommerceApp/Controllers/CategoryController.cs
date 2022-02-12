@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SMEcommerce.Models.EntityModels;
-using SMECommerce.Services;
-using SMECommerce.Services.Interfaces;
+using SMECommerce.Services.Abstractions;
 using SMEcommerceApp.Models.CategoryModels;
 using System;
 using System.Linq;
@@ -79,7 +78,7 @@ namespace SMEcommerceApp.Controllers
                 return RedirectToAction("List");
             }
 
-            var category = _categoryService.GetId((int)id);
+            var category = _categoryService.GetById((int)id);
 
             if(category==null)
             {
@@ -127,7 +126,7 @@ namespace SMEcommerceApp.Controllers
                 return RedirectToAction("List");
             }
 
-            var category = _categoryService.GetId((int)id);
+            var category = _categoryService.GetById((int)id);
             if(category==null)
             {
                 return RedirectToAction("List");

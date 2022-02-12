@@ -2060,6 +2060,19 @@
         "runtime": {
           "bin/placeholder/SMEcommerce.Models.dll": {}
         }
+      },
+      "SMECommerce.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -7182,11 +7195,17 @@
       "type": "project",
       "path": "../SMEcommerce.Models/SMEcommerce.Models.csproj",
       "msbuildProject": "../SMEcommerce.Models/SMEcommerce.Models.csproj"
+    },
+    "SMECommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj",
+      "msbuildProject": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Microsoft.EntityFrameworkCore >= 5.0.11",
+      "SMECommerce.Repositories.Abstractions >= 1.0.0",
       "SMEcommerce.Databases >= 1.0.0"
     ]
   },
@@ -7219,6 +7238,9 @@
           "projectReferences": {
             "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj": {
               "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj"
+            },
+            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj": {
+              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj"
             }
           }
         }

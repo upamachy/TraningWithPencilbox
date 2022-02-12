@@ -140,6 +140,64 @@
         }
       }
     },
+    "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj",
+        "projectName": "SMECommerce.Repositories.Abstractions",
+        "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\",
+        "outputPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Upama Chowdhury\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Models\\SMEcommerce.Models.csproj": {
+                "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Models\\SMEcommerce.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -166,6 +224,9 @@
             "projectReferences": {
               "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj": {
                 "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj"
+              },
+              "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj": {
+                "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Repositories.Abstractions\\SMECommerce.Repositories.Abstractions.csproj"
               }
             }
           }
@@ -185,6 +246,64 @@
               "version": "[5.0.11, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj",
+        "projectName": "SMECommerce.Services.Abstractions",
+        "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Upama Chowdhury\\.nuget\\packages\\",
+        "outputPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Upama Chowdhury\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Models\\SMEcommerce.Models.csproj": {
+                "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Models\\SMEcommerce.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -233,6 +352,9 @@
               },
               "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj": {
                 "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj"
+              },
+              "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj": {
+                "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services.Abstractions\\SMECommerce.Services.Abstractions.csproj"
               }
             }
           }

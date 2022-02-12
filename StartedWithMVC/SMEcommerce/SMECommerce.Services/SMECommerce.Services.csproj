@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SMEcommerce.Models\SMEcommerce.Models.csproj" />
     <ProjectReference Include="..\SMEcommerce.Repositories\SMEcommerce.Repositories.csproj" />
+    <ProjectReference Include="..\SMECommerce.Services.Abstractions\SMECommerce.Services.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

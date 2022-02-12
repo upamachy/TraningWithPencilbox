@@ -1836,6 +1836,7 @@
       "SMEcommerce.Repositories/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
+          "SMECommerce.Repositories.Abstractions": "1.0.0",
           "SMEcommerce.Databases": "1.0.0"
         },
         "runtime": {
@@ -1845,8 +1846,20 @@
           "SMEcommerce.Repositories.dll": {}
         }
       },
+      "SMECommerce.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "SMECommerce.Repositories.Abstractions.dll": {}
+        },
+        "compile": {
+          "SMECommerce.Repositories.Abstractions.dll": {}
+        }
+      },
       "SMECommerce.Services/1.0.0": {
         "dependencies": {
+          "SMECommerce.Services.Abstractions": "1.0.0",
           "SMEcommerce.Models": "1.0.0",
           "SMEcommerce.Repositories": "1.0.0"
         },
@@ -1855,6 +1868,17 @@
         },
         "compile": {
           "SMECommerce.Services.dll": {}
+        }
+      },
+      "SMECommerce.Services.Abstractions/1.0.0": {
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "SMECommerce.Services.Abstractions.dll": {}
+        },
+        "compile": {
+          "SMECommerce.Services.Abstractions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4427,7 +4451,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "SMECommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "SMECommerce.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SMECommerce.Services.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

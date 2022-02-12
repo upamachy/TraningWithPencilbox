@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SMEcommerce.Databases\SMEcommerce.Databases.csproj" />
+    <ProjectReference Include="..\SMECommerce.Repositories.Abstractions\SMECommerce.Repositories.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

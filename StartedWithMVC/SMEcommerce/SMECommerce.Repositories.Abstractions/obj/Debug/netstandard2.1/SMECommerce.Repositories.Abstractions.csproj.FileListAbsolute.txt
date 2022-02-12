@@ -1,0 +1,13 @@
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.deps.json
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\bin\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\bin\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.csproj.CopyComplete
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Repositories.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.pdb

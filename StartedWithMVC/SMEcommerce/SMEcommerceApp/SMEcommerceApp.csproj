@@ -14,9 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SMEcommerce.Databases\SMEcommerce.Databases.csproj" />
-    <ProjectReference Include="..\SMEcommerce.Repositories\SMEcommerce.Repositories.csproj" />
-    <ProjectReference Include="..\SMECommerce.Services\SMECommerce.Services.csproj" />
+    <ProjectReference Include="..\SMECommerce.App.Configuration\SMECommerce.App.Configuration.csproj" />
   </ItemGroup>
 
 </Project>

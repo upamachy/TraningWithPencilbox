@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,13 +7,10 @@ using Microsoft.Extensions.Hosting;
 using SMEcommerce.Databases.DbContexts;
 using SMEcommerce.Repositories;
 using SMEcommerce.Repositories.Abstractions;
+using SMECommerce.App.Configuration;
 using SMECommerce.Repositories;
 using SMECommerce.Services;
-using SMECommerce.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SMECommerce.Services.Abstractions;
 
 namespace SMEcommerceApp
 {
@@ -31,12 +27,7 @@ namespace SMEcommerceApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<SMEcommerceDbcontext>(c => c.UseSqlServer(@"Server=DELL\SQLEXPRESS; Database = SMEcommerceDB; Integrated Security=True"));
-            services.AddTransient<ICategoryRepository, CategoryRepositories>();
-            services.AddTransient<IPremiumCategoryRepository, PremiumCategoryRepository>();
-            services.AddTransient<ICategoryService, CategoryService>();
-            services.AddTransient<IProductRepository, ProductRepository>();
-            services.AddTransient<IProductService, ProductService>();
+            AppConfiguration.ConfigureServices(services);
             
         }
 

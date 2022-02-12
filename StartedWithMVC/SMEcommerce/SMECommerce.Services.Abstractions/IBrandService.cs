@@ -3,11 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SMECommerce.Services.Interfaces
+namespace SMECommerce.Services.Abstractions
 {
-    public interface IProductService:IService<Item>
+    public interface IBrandService:IService<Brand>
     {
-        
-        bool Save();
     }
 }

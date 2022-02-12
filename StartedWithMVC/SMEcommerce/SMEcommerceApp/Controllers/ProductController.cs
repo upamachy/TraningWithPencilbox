@@ -1,15 +1,10 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SMEcommerce.Models.EntityModels;
-using SMEcommerce.Repositories;
-using SMECommerce.Repositories;
-using SMECommerce.Services.Interfaces;
+using SMECommerce.Services.Abstractions;
 using SMEcommerceApp.Models.ProductModels;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SMEcommerceApp.Controllers
 {

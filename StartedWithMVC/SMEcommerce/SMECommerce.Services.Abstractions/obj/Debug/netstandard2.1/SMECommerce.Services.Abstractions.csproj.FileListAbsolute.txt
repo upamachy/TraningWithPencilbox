@@ -1,0 +1,13 @@
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Services.Abstractions.deps.json
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Services.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\bin\Debug\netstandard2.1\SMECommerce.Services.Abstractions.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\bin\Debug\netstandard2.1\SMEcommerce.Models.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\bin\Debug\netstandard2.1\SMEcommerce.Models.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.csproj.AssemblyReference.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.AssemblyInfoInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.AssemblyInfo.cs
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.csproj.CoreCompileInputs.cache
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.csproj.CopyComplete
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMECommerce.Services.Abstractions\obj\Debug\netstandard2.1\SMECommerce.Services.Abstractions.pdb

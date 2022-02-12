@@ -518,13 +518,16 @@
           "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.Logging/5.0.0": {
@@ -1999,6 +2002,24 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "SMECommerce.App.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "SMECommerce.Repositories.Abstractions": "1.0.0",
+          "SMECommerce.Services": "1.0.0",
+          "SMECommerce.Services.Abstractions": "1.0.0",
+          "SMEcommerce.Databases": "1.0.0",
+          "SMEcommerce.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.App.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.App.Configuration.dll": {}
+        }
+      },
       "SMEcommerce.Databases/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -2031,6 +2052,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
+          "SMECommerce.Repositories.Abstractions": "1.0.0",
           "SMEcommerce.Databases": "1.0.0"
         },
         "compile": {
@@ -2040,10 +2062,24 @@
           "bin/placeholder/SMEcommerce.Repositories.dll": {}
         }
       },
+      "SMECommerce.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.Repositories.Abstractions.dll": {}
+        }
+      },
       "SMECommerce.Services/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "SMECommerce.Services.Abstractions": "1.0.0",
           "SMEcommerce.Models": "1.0.0",
           "SMEcommerce.Repositories": "1.0.0"
         },
@@ -2052,6 +2088,19 @@
         },
         "runtime": {
           "bin/placeholder/SMECommerce.Services.dll": {}
+        }
+      },
+      "SMECommerce.Services.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMECommerce.Services.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMECommerce.Services.Abstractions.dll": {}
         }
       }
     }
@@ -2765,24 +2814,29 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
-      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.Logging/5.0.0": {
@@ -7158,6 +7212,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "SMECommerce.App.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.App.Configuration/SMECommerce.App.Configuration.csproj",
+      "msbuildProject": "../SMECommerce.App.Configuration/SMECommerce.App.Configuration.csproj"
+    },
     "SMEcommerce.Databases/1.0.0": {
       "type": "project",
       "path": "../SMEcommerce.Databases/SMEcommerce.Databases.csproj",
@@ -7173,10 +7232,20 @@
       "path": "../SMEcommerce.Repositories/SMEcommerce.Repositories.csproj",
       "msbuildProject": "../SMEcommerce.Repositories/SMEcommerce.Repositories.csproj"
     },
+    "SMECommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj",
+      "msbuildProject": "../SMECommerce.Repositories.Abstractions/SMECommerce.Repositories.Abstractions.csproj"
+    },
     "SMECommerce.Services/1.0.0": {
       "type": "project",
       "path": "../SMECommerce.Services/SMECommerce.Services.csproj",
       "msbuildProject": "../SMECommerce.Services/SMECommerce.Services.csproj"
+    },
+    "SMECommerce.Services.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SMECommerce.Services.Abstractions/SMECommerce.Services.Abstractions.csproj",
+      "msbuildProject": "../SMECommerce.Services.Abstractions/SMECommerce.Services.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7184,9 +7253,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
-      "SMECommerce.Services >= 1.0.0",
-      "SMEcommerce.Databases >= 1.0.0",
-      "SMEcommerce.Repositories >= 1.0.0"
+      "SMECommerce.App.Configuration >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7216,14 +7283,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj": {
-              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Databases\\SMEcommerce.Databases.csproj"
-            },
-            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj": {
-              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMEcommerce.Repositories\\SMEcommerce.Repositories.csproj"
-            },
-            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services\\SMECommerce.Services.csproj": {
-              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.Services\\SMECommerce.Services.csproj"
+            "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.App.Configuration\\SMECommerce.App.Configuration.csproj": {
+              "projectPath": "F:\\upama\\TraningWithPencilbox\\StartedWithMVC\\SMEcommerce\\SMECommerce.App.Configuration\\SMECommerce.App.Configuration.csproj"
             }
           }
         }

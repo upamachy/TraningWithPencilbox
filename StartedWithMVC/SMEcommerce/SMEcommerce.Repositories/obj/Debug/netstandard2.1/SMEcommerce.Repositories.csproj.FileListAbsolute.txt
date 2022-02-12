@@ -13,3 +13,5 @@ F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositorie
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositories\obj\Debug\netstandard2.1\SMEcommerce.Repositories.csproj.CopyComplete
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositories\obj\Debug\netstandard2.1\SMEcommerce.Repositories.dll
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositories\obj\Debug\netstandard2.1\SMEcommerce.Repositories.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositories\bin\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerce.Repositories\bin\Debug\netstandard2.1\SMECommerce.Repositories.Abstractions.pdb

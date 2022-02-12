@@ -1,10 +1,6 @@
 ﻿using SMEcommerce.Models.EntityModels;
-using SMEcommerce.Repositories;
 using SMEcommerce.Repositories.Abstractions;
-using SMECommerce.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using SMECommerce.Services.Abstractions;
 
 namespace SMECommerce.Services
 {

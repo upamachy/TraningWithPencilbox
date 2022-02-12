@@ -10,6 +10,7 @@
       "SMEcommerce.Repositories/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.11",
+          "SMECommerce.Repositories.Abstractions": "1.0.0",
           "SMEcommerce.Databases": "1.0.0"
         },
         "runtime": {
@@ -1517,6 +1518,14 @@
         "runtime": {
           "SMEcommerce.Models.dll": {}
         }
+      },
+      "SMECommerce.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "SMEcommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "SMECommerce.Repositories.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -2400,6 +2409,11 @@
       "sha512": ""
     },
     "SMEcommerce.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SMECommerce.Repositories.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
