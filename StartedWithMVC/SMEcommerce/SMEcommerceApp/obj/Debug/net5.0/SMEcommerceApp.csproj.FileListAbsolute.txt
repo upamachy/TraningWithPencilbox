@@ -168,3 +168,11 @@ F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debu
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.Services.Abstractions.dll
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.Repositories.Abstractions.pdb
 F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.Services.Abstractions.pdb
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\AutoMapper.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.App.Configuration.dll
+F:\upama\TraningWithPencilbox\StartedWithMVC\SMEcommerce\SMEcommerceApp\bin\Debug\net5.0\SMECommerce.App.Configuration.pdb

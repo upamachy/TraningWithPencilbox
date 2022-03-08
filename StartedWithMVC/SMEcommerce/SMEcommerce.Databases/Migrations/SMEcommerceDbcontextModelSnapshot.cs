@@ -19,6 +19,24 @@ namespace Day_7.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("SMEcommerce.Models.EntityModels.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -48,6 +66,9 @@ namespace Day_7.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("BrandId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
@@ -65,6 +86,8 @@ namespace Day_7.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BrandId");
+
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
@@ -72,11 +95,20 @@ namespace Day_7.Migrations
 
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Item", b =>
                 {
+                    b.HasOne("SMEcommerce.Models.EntityModels.Brand", null)
+                        .WithMany("Items")
+                        .HasForeignKey("BrandId");
+
                     b.HasOne("SMEcommerce.Models.EntityModels.Category", "Category")
                         .WithMany("Items")
                         .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("SMEcommerce.Models.EntityModels.Brand", b =>
+                {
+                    b.Navigation("Items");
                 });
 
             modelBuilder.Entity("SMEcommerce.Models.EntityModels.Category", b =>

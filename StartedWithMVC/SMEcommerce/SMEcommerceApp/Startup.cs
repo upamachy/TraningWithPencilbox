@@ -27,6 +27,7 @@ namespace SMEcommerceApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
             AppConfiguration.ConfigureServices(services);
             
         }

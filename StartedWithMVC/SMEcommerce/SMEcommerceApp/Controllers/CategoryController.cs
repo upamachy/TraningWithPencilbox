@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SMEcommerce.Models.EntityModels;
 using SMECommerce.Services.Abstractions;
 using SMEcommerceApp.Models.CategoryModels;
@@ -10,9 +11,11 @@ namespace SMEcommerceApp.Controllers
     public class CategoryController : Controller
     {
         ICategoryService _categoryService;
-        public CategoryController(ICategoryService categoryService)
+        IMapper _mapper;
+        public CategoryController(ICategoryService categoryService,IMapper mapper)
         {
             _categoryService = categoryService;
+            _mapper = mapper;
         }
         public string Index()
         {
@@ -54,14 +57,15 @@ namespace SMEcommerceApp.Controllers
            
             if (model.Name!=null)
             {
-                
-                var category = new Category()
-                {
-                    Name = model.Name,
-                    Description = model.Description,
-                    Code = model.Code
-                };
 
+                //var category = new Category()
+                //{
+                //    Name = model.Name,
+                //    Description = model.Description,
+                //    Code = model.Code
+                //};
+
+                var category = _mapper.Map<Category>(model);
                 var isAdded = _categoryService.Add(category);
                 if(isAdded)
                 {
@@ -102,14 +106,14 @@ namespace SMEcommerceApp.Controllers
         {
             if(ModelState.IsValid)
             {
-                var category = new Category()
-                {
-                    Id = model.Id,
-                    Name = model.Name,
-                    Code = model.Code,
-                    Description = model.Description
-                };
-
+                //var category = new Category()
+                //{
+                //    Id = model.Id,
+                //    Name = model.Name,
+                //    Code = model.Code,
+                //    Description = model.Description
+                //};
+               var category= _mapper.Map<Category>(model);
                 bool isUpdated = _categoryService.Update(category);
                 if(isUpdated)
                 {
