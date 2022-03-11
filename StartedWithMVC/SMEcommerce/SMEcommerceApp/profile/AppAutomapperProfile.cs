@@ -18,6 +18,7 @@ namespace SMEcommerceApp.profile
             CreateMap<Category, CategoryCreate>();
             CreateMap<Category, CategoryListVM>();
             CreateMap<Category, CategoryEditVM>();
+            CreateMap<Category, CategoryResult>();
         }
     }
 }
